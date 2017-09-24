@@ -6,7 +6,7 @@ Indlæs parametre
 beregn resultat
 vis resultat
  */
-public class Main {
+public class RoadTripPrice {
 
     public static void main(String[] args) {
         //Indlæser scanner og printer tekst
@@ -17,7 +17,7 @@ public class Main {
         System.out.print("Indtast mil/gallon ");
         double milPerGallon=input.nextDouble();
 
-        System.out.print("Angiv pris pr. gallon ");
+        System.out.print("Angiv pris pr. gallon angivet i $ ");
         double pris=input.nextDouble();
 
         //Beregner variabler
@@ -25,6 +25,6 @@ public class Main {
         prisRes=(distance/milPerGallon)*pris;
 
         //Vis resultat
-        System.out.print(prisRes);
+        System.out.print("Prisen på rejsen er $"+prisRes);
     }
 }
